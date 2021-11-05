@@ -10,7 +10,10 @@ Her bir obje içerisinde 'Cascade','Img','Out','TestCascade' dosyaları bulunmak
 'Img' kısmında pozitif ve negatif resimlerimin bulunduğu kısımdır.
 'TestCascade' kısmında ise daha önce yapmış olduğum eğitimlerdir.
 'Out' kısmında ise her eğitim sonrası tespit ettiği objelerin birer kopyasını kayıt ettiği kısımdır. </br>
-not:Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlış olarak tespit ettilerini 'Img' içerisinde 'negative' kısmına eklenerek ve doğru olarak bulduğundan emin olduğum çıktının konum bilgileri 'positive.txt' dosyasına eklenerek 'TestCascade' içerisindeki 'Final' eğitimine ulaşılmıştır.
+
+# train.py
+Burada en iyi sonuca ulaşana kadar bu döngü tekrarlanmış ve 'TestCascade' kısmına çıktısı kayıt edilmiştir.</br>
+Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlış olarak tespit ettilerini 'Img' içerisinde 'negative' kısmına eklenerek ve doğru olarak bulduğundan emin olduğum çıktının konum bilgileri 'positive.txt' dosyasına eklenerek 'TestCascade' içerisindeki 'Final' eğitimine ulaşılmıştır.
 
 # Eğitim
 
@@ -28,7 +31,12 @@ not:Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yan
 'Img' klasörü altında bulunan 'negative' klasörü içindeki objeye ait olmayan resimin/lerin dosya yollarının yazıldığı belge.
 
 ### vector.bat
-'positive.txt' belgesine verilen yolları alıp her resmi vektör biçimine çevirir ve 'el.vec' kayıt eder. Bunu Opencv kütüphanesinde bulunan 'opencv_createsamples' ile gerçekleştirilir. (girdi: 'positive.txt' belgesi, kaç adet veri olduğu, hangi isimde kayıt edileceği)
+'positive.txt' belgesine verilen yolları alıp her resmi vektör biçimine çevirir ve 'el.vec' kayıt eder. Bunu Opencv kütüphanesinde bulunan 'opencv_createsamples' ile gerçekleştirilir. 
+-info positive.txt : </br>
+-num 600 :  Toplam pozitif değer </br>
+-vec el.vec : Çıktı ismi </br>
+-w 24 -h 24  : İşlem boyutu </br>
+
 
 ### el.vec
 'opencv_createsamples'  çıktısıdır.
@@ -38,7 +46,7 @@ not:Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yan
 -data Cascade : kayıt edilecek dosya </br>
 -vec el.vec : 'vector.bat' ile dönüştürdüğümüz pozitif veri çıktısı. </br>
 -bg negative.txt : 'negative.txt' belgesi </br>
--numNeg 65 : Toplam negatif veri  </br>
+-numNeg 60 : Toplam negatif veri  </br>
 -numStages 5 : Eğitim adım sayısı </br>
 -minHitRate 0.995 : Minimum yaklaşım değeri (standart)</br>
 -maxFalseAlarmRate 0.2 : hata değeri (standart)</br>

@@ -1,6 +1,5 @@
 import cv2
 
-
 image = cv2.imread('squid.jpg',0)
 mainimage = cv2.imread('squid.jpg')
 

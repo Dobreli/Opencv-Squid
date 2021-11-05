@@ -1,6 +1,7 @@
 # Squid 
 ### Youtube
- [Youtube](https://youtu.be/9sLRfFktBPU)
+![Youtube](https://youtu.be/9sLRfFktBPU)
+
 ### cascade 
 cascade kısmında eğitimi tamamlanmış xml dosyalarım bulunmaktadır.
 ### traincascade

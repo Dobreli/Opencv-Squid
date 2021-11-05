@@ -1,7 +1,7 @@
 # Squid 
 ### Youtube
 [Youtube video](https://youtu.be/9sLRfFktBPU)
-
+Videoda sadece main.py kısmının çıktısı gösterildi.
 ### cascade 
 cascade kısmında eğitimi tamamlanmış xml dosyalarım bulunmaktadır.
 ### traincascade

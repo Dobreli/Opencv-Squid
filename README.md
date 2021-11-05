@@ -34,11 +34,9 @@ Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlı�
 'opencv_createsamples'  çıktısıdır.
 
 ### train.bat
-'opencv_traincascade' ile eğitim gerçekleşti.
--numpos hesaplaması:
-positif_değer-negatif_deger
-___________________________
-1(eğitim_adım_sayısı-1)x(1-minimum yaklaşım değeri)
+'opencv_traincascade' ile eğitim gerçekleşti. </br>
+-numpos hesaplaması: </br>
+positif_değer-negatif_deger / 1(eğitim_adım_sayısı-1)x(1-minimum yaklaşım değeri)
 
 
 # PYTHON SURUM

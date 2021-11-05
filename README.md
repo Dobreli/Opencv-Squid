@@ -31,7 +31,7 @@ Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlı�
 'Img' klasörü altında bulunan 'negative' klasörü içindeki objeye ait olmayan resimin/lerin dosya yollarının yazıldığı belge.
 
 ### vector.bat
-'positive.txt' belgesine verilen yolları alıp her resmi vektör biçimine çevirir ve 'el.vec' kayıt eder. Bunu Opencv kütüphanesinde bulunan 'opencv_createsamples' ile gerçekleştirilir. 
+'positive.txt' belgesine verilen yolları alıp her resmi vektör biçimine çevirir ve 'el.vec' kayıt eder. Bunu Opencv kütüphanesinde bulunan 'opencv_createsamples' ile gerçekleştirilir. </br></br>
 -info positive.txt : </br>
 -num 600 :  Toplam pozitif değer </br>
 -vec el.vec : Çıktı ismi </br>

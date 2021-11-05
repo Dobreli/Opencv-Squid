@@ -13,21 +13,32 @@ Her bir obje içerisinde 'Cascade','Img','Out','TestCascade' dosyaları bulunmak
 Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlış olarak tespit ettilerini 'Img' içerisinde 'negative' kısmına eklendi.
 
 # Eğitim
+
 ### Cascade
 'train.bat' xml çıktısı bu dosyaya kayıt edilmektedir. 
+
 ### Img
 'Img' klasörü altında 'positive' ile 'negative' dosyaları bulunmaktadır. 'positive' kısmında eğitimi yapılacak objeye ait resim eklendi. (Mevcut resim üzerinden ilerlendi.)
 'negative' kısmında ise objenin olmadığı resimler eklendi. (İlk başta bulmasını istediğim objeyi PS yardımı ile sildim ve ilk eğitimlerime başladım.)
+
 ### positive.txt
 'Img' klasörü altında bulunan 'positive' klasörü içindeki objeye ait resimin/lerin dosya yollarının yazıldığı belge. Burda her resim içinde objeden kaç tane olduğu ve nerede olduğu dosya yolunun hemen yanına (x,y,w,h formatında) eklendi.
+
 ### negative.txt
 'Img' klasörü altında bulunan 'negative' klasörü içindeki objeye ait olmayan resimin/lerin dosya yollarının yazıldığı belge.
+
 ### vector.bat
 'positive.txt' belgesine verilen yolları alıp her resmi vektör biçimine çevirir ve 'el.vec' kayıt eder. Bunu Opencv kütüphanesinde bulunan 'opencv_createsamples' ile gerçekleştirilir. (girdi: 'positive.txt' belgesi, kaç adet veri olduğu, hangi isimde kayıt edileceği)
+
 ### el.vec
 'opencv_createsamples'  çıktısıdır.
+
 ### train.bat
-'opencv_traincascade' ile ise vektöre çevrilen pozitif objelerin ve negatif objelerin verilmesi ve eğitim için gereken parametrelerin girilmesi ile eğitim sonuçlandı.(Standart değerler)
+'opencv_traincascade' ile eğitim gerçekleşti.
+-numpos hesaplaması:
+positif_değer-negatif_deger
+___________________________
+1(eğitim_adım_sayısı-1)x(1-minimum yaklaşım değeri)
 
 
 # PYTHON SURUM

@@ -1,0 +1,1 @@
+C:\Users\DobreLi\Desktop\opencv\build\x64\vc15\bin\opencv_traincascade.exe -data Cascade -vec el.vec -bg negative.txt -numPos 535 -numNeg 65 -numStages 5 -minHitRate 0.995 -maxFalseAlarmRate 0.1 -mem 1024 -w 24 -h 24

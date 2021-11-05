@@ -9,8 +9,8 @@ Her bir obje içerisinde 'Cascade','Img','Out','TestCascade' dosyaları bulunmak
 'Cascade' kısmında en son yapmış olduğum eğitim çıktısı bulunur.
 'Img' kısmında pozitif ve negatif resimlerimin bulunduğu kısımdır.
 'TestCascade' kısmında ise daha önce yapmış olduğum eğitimlerdir.
-'Out' kısmında ise her eğitim sonrası tespit ettiği objelerin birer kopyasını kayıt ettiği kısımdır.
-Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlış olarak tespit ettilerini 'Img' içerisinde 'negative' kısmına eklendi.
+'Out' kısmında ise her eğitim sonrası tespit ettiği objelerin birer kopyasını kayıt ettiği kısımdır. </br>
+not:Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlış olarak tespit ettilerini 'Img' içerisinde 'negative' kısmına eklenerek ve doğru olarak bulduğundan emin olduğum çıktının konum bilgileri 'positive.txt' dosyasına eklenerek 'TestCascade' içerisindeki 'Final' eğitimine ulaşılmıştır.
 
 # Eğitim
 
@@ -35,8 +35,16 @@ Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlı�
 
 ### train.bat
 'opencv_traincascade' ile eğitim gerçekleşti. </br>
--numpos hesaplaması: </br>
-positif_değer-negatif_deger / 1(eğitim_adım_sayısı-1)x(1-minimum yaklaşım değeri)
+-data Cascade : kayıt edilecek dosya </br>
+-vec el.vec : 'vector.bat' ile dönüştürdüğümüz pozitif veri çıktısı. </br>
+-bg negative.txt : 'negative.txt' belgesi </br>
+-numNeg 65 : Toplam negatif veri  </br>
+-numStages 5 : Eğitim adım sayısı </br>
+-minHitRate 0.995 : Minimum yaklaşım değeri (standart)</br>
+-maxFalseAlarmRate 0.2 : hata değeri (standart)</br>
+-w 24 -h 24 : işlem yapılacak boyut </br>
+-numPos hesaplaması: </br>
+toplam_pozitif_değer-toplam_negatif_deger / 1(eğitim_adım_sayısı-1)x(1-minimum yaklaşım değeri)
 
 
 # PYTHON SURUM

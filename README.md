@@ -13,12 +13,12 @@ Her bir obje içerisinde 'Cascade','Img','Out','TestCascade' dosyaları bulunmak
 Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlış olarak tespit ettilerini 'Img' içerisinde 'negative' kısmına eklendi.
 
 # Eğitim
-##### Cascade
-##### Img
-##### positive.txt
-##### negative.txt
-##### vector.bat
-##### train.bat
+### Cascade
+### Img
+### positive.txt
+### negative.txt
+### vector.bat
+### train.bat
 
 'Img' klasörü altında 'positive' ile 'negative' dosyaları bulunmaktadır. 'positive' kısmında eğitimi yapılacak objeye ait resim eklendi. (Mevcut resim üzerinden ilerlendi.)
 'negative' kısmında ise objenin olmadığı resimler eklendi. İlk başta bulmasını istediğim objeyi PS yardımı ile sildim ve ilk eğitimlerime başladım.

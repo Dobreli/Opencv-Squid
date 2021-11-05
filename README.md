@@ -14,15 +14,19 @@ Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlı�
 
 # Eğitim
 ### Cascade
+'train.bat' xml çıktısı bu dosyaya kayıt edilmektedir. 
 ### Img
-### positive.txt
-### negative.txt
-### vector.bat
-### train.bat
-
 'Img' klasörü altında 'positive' ile 'negative' dosyaları bulunmaktadır. 'positive' kısmında eğitimi yapılacak objeye ait resim eklendi. (Mevcut resim üzerinden ilerlendi.)
-'negative' kısmında ise objenin olmadığı resimler eklendi. İlk başta bulmasını istediğim objeyi PS yardımı ile sildim ve ilk eğitimlerime başladım.
-Opencv kütüphanesinde bulunan 'opencv_createsamples' ile mevcut resim üzerinden eğitimi yapılacak objeye ait resmin farklı boyutlarda birden fazla pozitif resmini işleyebilmesi için vektör'e çevrilme işlemi gerçekleşti.
+'negative' kısmında ise objenin olmadığı resimler eklendi. (İlk başta bulmasını istediğim objeyi PS yardımı ile sildim ve ilk eğitimlerime başladım.)
+### positive.txt
+'Img' klasörü altında bulunan 'positive' klasörü içindeki objeye ait resimin/lerin dosya yollarının yazıldığı belge. Burda her resim içinde objeden kaç tane olduğu ve nerede olduğu dosya yolunun hemen yanına (x,y,w,h formatında) eklendi.
+### negative.txt
+'Img' klasörü altında bulunan 'negative' klasörü içindeki objeye ait olmayan resimin/lerin dosya yollarının yazıldığı belge.
+### vector.bat
+'positive.txt' belgesine verilen yolları alıp her resmi vektör biçimine çevirir ve 'el.vec' kayıt eder. Bunu Opencv kütüphanesinde bulunan 'opencv_createsamples' ile gerçekleştirilir. (girdi: 'positive.txt' belgesi, kaç adet veri olduğu, hangi isimde kayıt edileceği)
+### el.vec
+'opencv_createsamples'  çıktısıdır.
+### train.bat
 'opencv_traincascade' ile ise vektöre çevrilen pozitif objelerin ve negatif objelerin verilmesi ve eğitim için gereken parametrelerin girilmesi ile eğitim sonuçlandı.(Standart değerler)
 
 

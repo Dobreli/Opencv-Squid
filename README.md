@@ -42,7 +42,7 @@ Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlı�
 'opencv_createsamples'  çıktısıdır.
 
 ### train.bat
-'opencv_traincascade' ile eğitim gerçekleşti. </br>
+'opencv_traincascade' ile eğitim gerçekleşti. </br></br>
 -data Cascade : kayıt edilecek dosya </br>
 -vec el.vec : 'vector.bat' ile dönüştürdüğümüz pozitif veri çıktısı. </br>
 -bg negative.txt : 'negative.txt' belgesi </br>

@@ -1,6 +1,6 @@
 # Squid 
 ### Youtube
-[Youtube video](https://youtu.be/9sLRfFktBPU)
+[Youtube video](https://youtu.be/9sLRfFktBPU) </br>
 Videoda sadece main.py kısmının çıktısı gösterildi.
 ### cascade 
 cascade kısmında eğitimi tamamlanmış xml dosyalarım bulunmaktadır.
@@ -42,7 +42,7 @@ Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlı�
 
 
 ### el.vec
-'opencv_createsamples'  çıktısıdır.
+'train.bat'  çıktısıdır.
 
 ### train.bat
 'opencv_traincascade' ile eğitim gerçekleşti. </br></br>
@@ -57,6 +57,8 @@ Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlı�
 -numPos hesaplaması: </br>
 toplam_pozitif_değer-toplam_negatif_deger / 1(eğitim_adım_sayısı-1)x(1-minimum yaklaşım değeri)
 
+### check.bat
+'vector.bar' ile dönüştürülen verilerin çıktısının kontrol ettiğimiz kısım. 
 
 # PYTHON SURUM
 ### 3.9.4

@@ -3,15 +3,15 @@
 [Youtube video](https://youtu.be/9sLRfFktBPU) </br>
 Videoda sadece main.py kısmının çıktısı gösterildi.
 ### cascade 
-cascade kısmında eğitimi tamamlanmış xml dosyalarım bulunmaktadır.
+cascade kısmında eğitimi tamamlanmış xml dosyaları bulunmaktadır.
 ### traincascade
 traincascade kısmında her bir obje için eğitimler ve aşamaları bulunmaktadır.
 
-Her bir obje içerisinde 'Cascade','Img','Out','TestCascade' dosyaları bulunmaktadır.
+Her bir obje içerisinde 'Cascade','Img','Out','TestCascade' dosyaları bulunmaktadır. </br>
 
-'Cascade' kısmında en son yapmış olduğum eğitim çıktısı bulunur.
-'Img' kısmında pozitif ve negatif resimlerimin bulunduğu kısımdır.
-'TestCascade' kısmında ise daha önce yapmış olduğum eğitimlerdir.
+'Cascade' kısmında en son yapmış olduğum eğitim çıktısı bulunur. 'test1' ile başlar 'final' sonlanan tüm denemelerin kayıtları bulunur. </br>
+'Img' kısmında pozitif ve negatif resimlerimin bulunduğu kısımdır. </br>
+'TestCascade' kısmında ise daha önce yapmış olduğum eğitimlerdir. </br>
 'Out' kısmında ise her eğitim sonrası tespit ettiği objelerin birer kopyasını kayıt ettiği kısımdır. </br>
 
 # train.py

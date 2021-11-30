@@ -9,10 +9,10 @@ traincascade kısmında her bir obje için eğitimler ve aşamaları bulunmaktad
 
 Her bir obje içerisinde 'Cascade','Img','Out','TestCascade' dosyaları bulunmaktadır. </br>
 
-'Cascade' kısmında en son yapmış olduğum eğitim çıktısı bulunur. 'test1' ile başlar 'final' sonlanan tüm denemelerin kayıtları bulunur. </br>
-'Img' kısmında pozitif ve negatif resimlerimin bulunduğu kısımdır. </br>
-'TestCascade' kısmında ise daha önce yapmış olduğum eğitimlerdir. </br>
-'Out' kısmında ise her eğitim sonrası tespit ettiği objelerin birer kopyasını kayıt ettiği kısımdır. </br>
+Cascade = kısmında en son yapmış olduğum eğitim çıktısı bulunur. 'test1' ile başlar 'final' ile sonlanır. Tüm denemelerin kayıtları bulunur. </br>
+Img = Kısmında pozitif ve negatif resimlerimin bulunduğu kısımdır. </br>
+TestCascade = Kısmında ise daha önce yapmış olduğum eğitimlerdir. </br>
+Out = Kısmında ise her eğitim sonrası tespit ettiği objelerin birer kopyasını kayıt ettiği kısımdır. </br>
 
 # train.py
 Burada en iyi sonuca ulaşana kadar bu döngü tekrarlanmış ve 'TestCascade' kısmına çıktısı kayıt edilmiştir.</br>

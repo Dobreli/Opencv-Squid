@@ -21,7 +21,7 @@ Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlı�
 # Eğitim
 
 ### Cascade
-'train.bat' ile yapılan eğitim çıktısının kayıt olduğu klasör. 
+'train.bat' ile yapılan eğitim çıktısının kayıt edildiği klasör. 
 
 ### Img
 'Img' klasörü altında 'positive' ile 'negative' dosyaları bulunmaktadır. 'positive' kısmında eğitimi yapılacak objeye ait resim eklendi. (Mevcut resim üzerinden ilerlendi.)

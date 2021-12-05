@@ -58,7 +58,7 @@ Her eğitim sonrası 'Out' dosyasında kayıt edilen resimler arasından yanlı�
 toplam_pozitif_değer-toplam_negatif_deger / 1(eğitim_adım_sayısı-1)x(1-minimum yaklaşım değeri)
 
 ### check.bat
-'vector.bar' ile dönüştürülen verilerin çıktısının kontrol ettiğimiz kısım. 
+'vector.bat' ile dönüştürülen verilerin çıktısının kontrol ettiğimiz kısım. 
 
 # PYTHON SURUM
 ### 3.9.4

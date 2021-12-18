@@ -1,4 +1,5 @@
-# Squid 
+# Opencv Image Train 
+## Squid Game Image Chalange
 ### Youtube
 [Youtube video](https://youtu.be/9sLRfFktBPU) </br>
 Videoda sadece main.py kısmının çıktısı gösterildi.
